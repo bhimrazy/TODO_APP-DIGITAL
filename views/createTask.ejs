@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title><%= title %></title>
+
+<link rel=icon href="/assets/favicon.png" sizes="16x16" type="image/png">
+ <script src="https://kit.fontawesome.com/2fe76bb6c2.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head><body data-gr-c-s-loaded="true">
+    <nav class="navbar navbar-expand-md navbar-light bg-primary px-4 fixed-top ">
+   <a class="navbar-brand  text-light" href="/"><h3><i class="fab fa-shopware px-2"></i>TODO_APP</h3></a>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse" id="navbarCollapse">
+   <ul class="navbar-nav ml-auto mt-2 mt-lg-0 px-3 h4 ">
+      <li class="nav-item active">
+        <a class="nav-link text-white font-weight-bold  pr-5" href="/createTask">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light mr-2" href="/listTask">List</a>
+      </li>
+      
+       
+    </ul>
+</nav>
+
+<main role="main" class="container mt-5">
+  <div class="jumbotron mt-4">
+    <h1 class='mt-4'>Create your Task or Event</h1>
+    <form method="post" action="/saveTask">
+            
+              <label>Title : </label>
+              <input type="text" name="title" class="form-control" id="title" placeholder="Task Title" />
+           <br>
+           
+              <label>Description : </label>
+              <textarea class="form-control" name="description" id="description" placeholder="Write Your Task Here"></textarea>
+           <br>
+            <button type="submit" class="btn btn-success">Save Task</button>
+      </form></div>
+  
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/assets/favicon.png" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">© 2017-2019</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Add Task</a></li>
+          <li><a class="text-muted" href="#">Edit Task</a></li>
+          <li><a class="text-muted" href="#">Update Task</a></li>
+          <li><a class="text-muted" href="#">Delete Task</a></li>          
+          <li><a class="text-muted" href="#">Manage Task</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Bootstrap</a></li>
+          <li><a class="text-muted" href="#">Jquery</a></li>
+          <li><a class="text-muted" href="#">Fontawesome</a></li>
+          <li><a class="text-muted" href="#">Flaticon</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
