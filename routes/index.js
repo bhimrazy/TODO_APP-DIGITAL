@@ -21,9 +21,6 @@ router.get('/login',function(req, res){
 router.get('/createTask',function(req, res){
   res.render('createTask', { title: 'TODO_APP || DIGITAL' });
 });
-router.get('/listTask',function(req, res){
-  res.render('listTask', { title: 'TODO_APP || DIGITAL' });
-});
 router.post('/signup', (req, res) => {
 const user = new Users({
   username : req.body.username,
